@@ -1,0 +1,19 @@
+{
+  "name": "webservice_mediaplayer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cool-ascii-faces": "1.3.4",
+    "express": "^4.15.2",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xuant",
+  "license": "ISC"
+}
