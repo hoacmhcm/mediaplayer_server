@@ -84,7 +84,7 @@ app.get('/getallsong', (req, res) => {
 
 
 app.get('/getsongbysearch', (req, res) => {
-    connection.query("select * from songs where title like '%" + [req.query.title] + "%'", function (error, results) {
+    connection.query("select * from songs inner join artists on songs.id_artist = artists.id where songs.title like '%" + [req.query.title] + "%' or artists.name like '%" + [req.query.title] + "%'", function (error, results) {
         if (error) throw error;
         console.log(this.sql);
         res.json(results);
